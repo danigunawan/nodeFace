@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Enter the image URL to get information about your face.
+  form(action="/", method="post")
+    #form-group
+      label Link: 
+      input.form-control(type="text", name="title", value="https://www.rd.com/wp-content/uploads/2016/11/02_skills_learn_growing_Up_big_family_shine_own_Christopher-Futcher.jpg")
+    input.btn(type="submit")
+    

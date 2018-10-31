@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  a(href="/" class="btn btn-primary" role="button") Back
+  h1 Analayzed Picture
+  #wrapper(style='width:1020px; display:table;')
+    #jsonOutput(style='width:600px; display:table-cell;')
+      | Response:
+      br
+      br
+      textarea#responseTextArea.UIInput(style='width:580px; height:400px;') #{call}
+    #imageDiv(style='width:420px; display:table-cell;')
+      | Source image:
+      br
+      br
+      img#sourceImage(width='400', src= ipath)
